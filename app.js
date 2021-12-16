@@ -1,6 +1,6 @@
 const express = require("express");
+const path = require("path");
 const storyRoutes = require("./routes/story");
-const dotenv = require("dotenv");
 
 require('dotenv').config({path: __dirname + '/.env'})
 
