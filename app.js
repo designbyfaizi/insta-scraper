@@ -2,10 +2,10 @@ const express = require("express");
 const storyRoutes = require("./routes/story");
 const dotenv = require("dotenv");
 
+require('dotenv').config({path: __dirname + '/.env'})
 
 const app = express();
 const PORT = 3030;
-app.use(dotenv());
 
 
 app.use("/instagram", storyRoutes);
